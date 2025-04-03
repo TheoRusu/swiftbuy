@@ -1,4 +1,4 @@
-import { Providers } from "./provider";
+import Providers from "./provider";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: "#FAF9F6" }}>
+      <body>
         <Providers>{children}</Providers>
       </body>
     </html>
